@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <h1>Item Sorter</h1>
+        </nav>
+
+        <section id="add-item-section">
+            <h2>Add Item</h2>
+            <form id="add-item-form">
+                <input type="text" id="item-name" placeholder="Item Name">
+                <select id="item-type">
+                    <option value="WEAPON">Weapon</option>
+                    <option value="ARMOR">Armor</option>
+                    <option value="POTION">Potion</option>
+                </select>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section id="filter-section">
+            <button class="filter-btn" data-type="ALL">All</button>
+            <button class="filter-btn" data-type="WEAPON">Weapon</button>
+            <button class="filter-btn" data-type="ARMOR">Armor</button>
+            <button class="filter-btn" data-type="POTION">Potion</button>
+        </section>
+
+        <section id="item-list">
+
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
