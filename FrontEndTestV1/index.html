@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Marketplace</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav>
+            <h1>Marketplace</h1>
+            <input type="text" id="search-bar" placeholder="Search items...">
+        </nav>
+
+        <section id="add-item-section">
+            <h2>Add Item</h2>
+            <form id="add-item-form">
+                <input type="text" id="item-name" placeholder="Item Name">
+                <input type="number" id="item-quantity" placeholder="Item Quantity">
+                <select id="item-type">
+                    <option value="Weapon">Weapon</option>
+                    <option value="Armor">Armor</option>
+                    <option value="Potion">Potion</option>
+                </select>
+                <button type="submit">Add Item</button>
+            </form>
+        </section>
+
+        <section id="filter-section">
+            <button class="filter-btn" data-type="All">All</button>
+            <button class="filter-btn" data-type="Weapon">Weapon</button>
+            <button class="filter-btn" data-type="Armor">Armor</button>
+            <button class="filter-btn" data-type="Potion">Potion</button>
+        </section>
+
+        <section id="count-section">
+            <p>Total Items: <span id="item-count">0</span></p>
+        </section>
+
+        <section id="item-list">
+            <p id="empty-message"></p>
+        </section>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
