@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Goblin Merchant</title>
+            <link rel="stylesheet" href="style.css">
+        </head>
+
+    <body>
+        
+        <nav>
+            <div id="nav-left">
+                <button id="burger-btn">☰</button>
+                <h1>Golbin Merchant</h1>
+            </div>
+            <p>"Quality good, reasonable prices!"</p>\
+            <input type="text" id="search-bar" placeholder="Search items...">
+            <span id="gold-display">Current Gold: 500</span>
+        </nav>
+
+        <div id="burger-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Inventory</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+        </div>
+
+        <section id="shop-section">
+            <h2>Shop</h2>
+            <div id="shop-items"></div>
+        </section>
+
+        <section id="inventory-section">
+            <h2>Inventory</h2>
+            <div id="inventory-items"></div>
+            <div id="inventory-summary">
+                <p>Total Spent: <span id="total-spent">0</span></p>
+                <p>Items in Inventory: <span id="item-count">0</span></p>
+            </div>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
