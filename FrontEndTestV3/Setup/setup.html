@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Battle Simulator - Setup</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-left">
+                <button id="burger-btn">☰</button>
+                <h1>Battle Simulator</h1>
+            </div>
+        </nav>
+
+        <div id="burger-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Setup/setup.html">Setup</a></li>
+                <li><a href="../Battle/battle.html">Battle</a></li>
+            </ul>
+        </div>
+
+        <main id="setup-content">
+            <h2>Unit Setup</h2>
+            <h4>---These are default values that can be changed---</h4>
+
+            <div id="setup-forms">
+                <div class="unit-form">
+                    <h3>Unit 1</h3>
+                    <input type="text" id="unit1-name" placeholder="Name" value="Footman">
+                    <input type="text" id="unit1-hp" placeholder="Health" value="250">
+                    <input type="text" id="unit1-dmg" placeholder="Damage" value="10">
+                </div>
+
+                <div class="unit-form">
+                    <h3>Unit 2</h3>
+                    <input type="text" id="unit2-name" placeholder="Name" value="Footman">
+                    <input type="text" id="unit2-hp" placeholder="Health" value="250">
+                    <input type="text" id="unit2-dmg" placeholder="Damage" value="10">
+                </div>
+            </div>
+
+            <button id="start-btn" onclick="saveAndStart()">
+                Start Battle
+            </button>
+
+        </main>
+
+        <script src="setup.js"></script>
+    </body>
+</html>

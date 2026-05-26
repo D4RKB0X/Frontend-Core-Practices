@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Battle Simulator - Battle</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-left">
+                <button id="burger-btn">☰</button>
+                <h1>Battle Simulator</h1>
+            </div>
+        </nav>
+
+        <div id="burger-menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Setup/setup.html">Setup</a></li>
+                <li><a href="../Battle/battle.html">Battle</a></li>
+            </ul>
+        </div>
+
+        <main id="battle-content">
+            <h2>Battle!</h2>
+
+            <div id="battle-arena">
+                <div id="unit-display">
+                    <h3 id="b-unit1-name">Unit 1</h3>
+                    <p id="b-unit1-hp">250</p>
+                    <div class="health-bar-container">
+                        <div class="health-bar" id="b-unit1-bar"></div>
+                    </div>
+                    <p id="b-unit1-dmg">10</p>
+                </div>
+
+                <h2 id="vs-test">VS</h2>
+                
+                <div id="unit-display">
+                    <h3 id="b-unit2-name">Unit 2</h3>
+                    <p id="b-unit2-hp">250</p>
+                    <div class="health-bar-container">
+                        <div class="health-bar" id="b-unit2-bar"></div>
+                    </div>
+                    <p id="b-unit2-dmg">10</p>
+                </div>
+            </div>
+
+            <button id="attack-btn" onclick="attack()">
+                Attack!
+            </button>
+
+            <div id="winner-display" style="display:none">
+                <h2 id="winner-text">Winner!</h2>
+                <button onclick="window.location.href='../Setup/setup.html'">
+                    Play Again?
+                </button>
+            </div>
+
+            <div id="battle-log">
+                <h3>Battle Logs</h3>
+                <div id="log-entries"></div>
+            </div>
+        </main>
+
+        <script src="battle.js"></script>
+    </body>
+</html>

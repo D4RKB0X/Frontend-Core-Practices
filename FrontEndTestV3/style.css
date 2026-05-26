@@ -1,0 +1,300 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    background-color: #ee4d2d;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+nav h1 {
+    color: white;
+    font-size: 24px;
+}
+
+/* Burger Button */
+#burger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Burger Menu */
+#burger-menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    background-color: white;
+    width: 250px;
+    height: 100%;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+    z-index: 99;
+    padding: 20px;
+}
+
+#burger-menu ul {
+    list-style: none;
+}
+
+#burger-menu ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+#burger-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+#burger-menu ul li a:hover {
+    color: #ee4d2d;
+}
+
+#burger-menu.active {
+    display: block;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Home Page */
+#home-content {
+    text-align: center;
+}
+
+#home-content h1 {
+    font-size: 48px;
+    color: #ee4d2d;
+    margin-bottom: 10px;
+}
+
+#home-content p {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+#home-units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.home-unit {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.home-unit h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#vs-text {
+    color: #ee4d2d;
+    font-size: 36px;
+}
+
+/* Setup Page */
+#setup-content h2 {
+    color: #ee4d2d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#setup-content h4 {
+    color: #ee4d2d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#setup-forms {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.unit-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 400px;
+}
+
+.unit-form h3 {
+    color: #ee4d2d;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.unit-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.unit-form input:focus {
+    outline: none;
+    border-color: #ee4d2d;
+}
+
+/* Battle Page */
+#battle-content h2 {
+    color: #ee4d2d;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#battle-arena {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.unit-display {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 250px;
+}
+
+.unit-display h3 {
+    color: #ee4d2d;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.unit-display p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Health Bar */
+.health-bar-container {
+    background-color: #ddd;
+    border-radius: 4px;
+    height: 20px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.health-bar {
+    background-color: #4caf50;
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+/* Battle Log */
+#battle-log {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+#battle-log h3 {
+    color: #ee4d2d;
+    margin-bottom: 10px;
+}
+
+.log-entry {
+    padding: 5px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Winner Display */
+#winner-display {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#winner-text {
+    color: #ee4d2d;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+#start-btn, #attack-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 30px;
+    background-color: #ee4d2d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#start-btn:hover, #attack-btn:hover {
+    background-color: #d43f1f;
+}
+
+#winner-display button {
+    padding: 10px 25px;
+    background-color: #ee4d2d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#winner-display button:hover {
+    background-color: #d43f1f;
+}
