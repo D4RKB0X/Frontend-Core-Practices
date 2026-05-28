@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WC3 Marketplace - Product</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+    <body>
+        <nav>
+            <div id="nav-left">
+                <h1>WC3 Marketplace</h1>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search Items...">
+            <div id="nav-right">
+                <span id="gold-display">Gold: 500g</span>
+                <a href="../Cart/cart.html">
+                    Bag (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <a href="../index.html" id="back-btn">
+                ← Back to Marketplace
+            </a>
+
+            <section id="product-detail">
+                <div id="product-icon">
+                    <span id="detail-icon">⚔️</span>
+                </div>
+
+                <div id="product-info">
+                    <h2 id="detail-name">Item Name</h2>
+                    <p id="detail-category">Category</p>
+                    <p id="detail-price">Price: 0g</p>
+                    <p id="detail-stock">Stock: 0</p>
+                    <p id="detail-description">Description: </p>
+                </div>
+                
+                <div id="quantity-control">
+                    <button onclick="decreaseQty()">-</button>
+                    <span id="qty-display">1</span>
+                    <button onclick="increaseQty()">+</button>
+                </div>
+
+                <button id="add-to-bag-btn" onclick="addToBag()">
+                    Add to Bag
+                </button>
+            </section>
+        </main>
+
+        <footer>
+            <p>WC3 Marketplace © 2026</p>
+            <p>Quality goods for your army!</p>
+        </footer>
+
+        <script src="product.js"></script>
+    </body>
+</html>

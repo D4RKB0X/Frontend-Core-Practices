@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WC3 Marketplace - Cart</title>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-left">
+                <h1>WC3 Marketplace</h1>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search Items...">
+            <div id="nav-right">
+                <span id="gold-display">Gold: 500g</span>
+                <a href="../Cart/cart.html">
+                    Bag (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <a href="../index.html" id="back-btn">
+                ← Back to Marketplace
+            </a>
+
+            <h2>Your Bag</h2>
+            <section id="cart-section">
+                <div id="cart-items"></div>
+                <div id="cart-summary">
+                    <h3>Order Summary</h3>
+                    <p>Items: <span id="summary-count">0</span></p>
+                    <p>Price: <span id="summary-total">0g</span></p>
+                    <p>Your Gold: <span id="summary-gold">500g</span></p>
+
+                    <button id="checkout-btn" onclick="checkout()">Purchase</button>
+                    <a href="../index.html">
+                        <button id="continue-btn">
+                            ← Continue Shopping
+                        </button>
+                    </a>
+                </div>
+            </section>
+
+            <div id="empty-cart" style="display: none">
+                <p>Your Bag is Empty!</p>
+                <a href="../index.html">
+                    <button>Go Shopping!</button>
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>WC3 Marketplace © 2026</p>
+            <p>Quality goods for your army!</p>
+        </footer>
+
+        <script src="cart.js"></script>
+    </body>
+</html>

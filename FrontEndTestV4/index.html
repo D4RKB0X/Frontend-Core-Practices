@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WC3 Marketplace</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-left">
+                <h1>WC3 Marketplace</h1>
+            </div>
+            <input type="text" id="search-bar" placeholder="Search Items...">
+            <div id="nav-right">
+                <span id="gold-display">Gold: 500g</span>
+                <a href="Cart/cart.html">
+                    Bag (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <section id="filter-section">
+                <button class="filter-btn" data-category="All">All</button>
+                <button class="filter-btn" data-category="Material">Materials</button>
+                <button class="filter-btn" data-category="Weapon">Weapons</button>
+                <button class="filter-btn" data-category="Armor">Armor</button>
+            </section>
+
+            <section id="product-grid"></section>
+        </main>
+
+        <footer>
+            <p>WC3 Marketplace © 2026</p>
+            <p>Quality goods for your army!</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
