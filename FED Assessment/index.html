@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WC3 Resource Marketplace</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav>
+            <div id="nav-left">
+                <h1>⚔️ WC3 Marketplace</h1>
+            </div>
+            <div id="nav-right">
+                <span id="gold-display">💰 500g</span>
+                <button id="cart-btn" onclick="toggleCart()">
+                    🎒 <span id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+
+        <section id="carousel">
+            <button id="prev-btn" onclick="prevSlide()">&#8249;</button>
+
+            <div class="slide active">
+                <div class="slide-content">
+                    <img src="images/lumber.png" class="slide-image" alt="Lumber Package">
+
+                    <h2>Lumber Package</h2>
+                    <p>Color: Brown</p>
+                    <p class="slide-price">500g</p>
+
+                    <button onclick="addToCart(1)">
+                        Order Now!
+                    </button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/stone.png" class="slide-image" alt="Stone Bundle">
+
+                    <h2>Stone Bundle</h2>
+                    <p>Color: Grey</p>
+                    <p class="slide-price">750g</p>
+
+                    <button onclick="addToCart(2)">
+                        Order Now!
+                    </button>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="slide-content">
+                    <img src="images/metal.png" class="slide-image" alt="Metal Crate">
+
+                    <h2>Metal Crate</h2>
+                    <p>Color: Silver</p>
+                    <p class="slide-price">1200g</p>
+
+                    <button onclick="addToCart(3)">
+                        Order Now!
+                    </button>
+                </div>
+            </div>
+
+            <button id="next-btn" onclick="nextSlide()">&#8250;</button>
+
+            <div id="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </section>
+
+        <section id="product-section">
+            <h2>📦 Available Resources</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <div id="cart-modal" style="display:none">
+            <div id="cart-content">
+                <div id="cart-header">
+                    <h2>🎒 Your Bag</h2>
+                    <button id="close-cart" onclick="toggleCart()">✕</button>
+                </div>
+
+                <p>Number of items in cart: 
+                    <span id="modal-count">0</span>
+                </p>
+
+                <div id="modal-items"></div>
+
+                <div id="cart-footer">
+                    <p>Total: <span id="modal-total">0g</span></p>
+                    <button id="checkout-btn" onclick="checkout()">💰 Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay" style="display:none" onclick="toggleCart()"></div>
+
+        <footer id="footer">
+            <p>© 2026 WC3 Marketplace. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
